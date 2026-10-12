@@ -1,0 +1,11 @@
+[package]
+name = "fherma-solution"
+version = "0.1.0"
+edition = "2021"
+
+# None. Keccak-f is sixty lines of rotations and xors, and a crate that wrapped
+# them would be measured instead of the permutation.
+[dependencies]
+
+[profile.release]
+opt-level = 3
